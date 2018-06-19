@@ -1,0 +1,491 @@
+[06-Nov-2017 12:08:50 PRC] PHP Fatal error:  Class 'yii\models\User' not found in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\FormUserController.php on line 14
+[06-Nov-2017 12:14:33 PRC] PHP Parse error:  syntax error, unexpected '$', expecting ',' or ';' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\views\form-user\index.php on line 8
+[06-Nov-2017 12:22:22 PRC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method frontend\models\User::addRule() does not exist' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php:195
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(195): ReflectionMethod->__construct('frontend\\models...', 'addRule')
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('frontend\\models...')
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(304): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(326): yii\web\ErrorHandler->renderCallStackItem('C:\\soft\\phpStud...', 30, 'frontend\\models...', 'addRule', Array, 3)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\exception.php(381): yii\web\ErrorHandler->renderCallStack(Object(yii\base\UnknownMethodException))
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(116): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#14 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\models\User::addRule()' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\models\User.php(30): yii\base\Component->__call('addRule', Array)
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\models\User.php(30): frontend\models\User->addRule(Array)
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\FormUserController.php(18): frontend\models\User->get_field_list()
+#3 [internal function]: frontend\controllers\FormUserController->actionIndex()
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('form-user', Array)
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\soft\\软件\\TortoiseSVN\\bin;C;\\soft\\phpStudy\\php\\php-5.6.27-nts;C:\\Users\\Mr.Z\\AppData\\Local\\Microsoft\\WindowsApps',
+    'SYSTEMROOT' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'PHP_FCGI_MAX_REQUESTS' => '1000',
+    'PHPRC' => 'C:/soft/phpStudy/php/php-5.6.27-nts/',
+    '_FCGI_SHUTDOWN_EVENT_' => '2292',
+    'SCRIPT_NAME' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_URI' => '/App/1510phpF_Nine/week/frontend/web/index.php?r=form-user',
+    'QUERY_STRING' => 'r=form-user',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '55321',
+    'SCRIPT_FILENAME' => 'C:/soft/phpStudy/WWW/App/1510phpF_Nine/week/frontend/web/index.php',
+    'SERVER_ADMIN' => 'admin@phpStudy.net',
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+    'SERVER_SIGNATURE' => '',
+    'SystemRoot' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-frontend=capt6b2r0cm6rvet8u5cmnmhr2; _csrf-frontend=06f85c4fab0ed7a212e9b4dddb76932c8df69b690821d35c4091eea7292e769ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%04p%ADU%7Ds+%86%C5%F3%F0W%09%01%B3%10O%C8%3Cs%A8%7C%3C%3EEuT%10p%D3%0E%0B%22%3B%7D; advanced-backend=mkk9msrarmm9mbvgnscg3fne62; _csrf-backend=cc77993a2c1dca940aaf43307f1682b002a11ebc5b572c6dc418bf381b79e6aca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%CA%0F%BF%2F%F3%91J%84%94%8E%D7%A7%AE%F7%1C_%28%3C%3C%C2e%E3%D6%00%BE%1E%13%7C%85%EE%C24%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1509942142.267977,
+    'REQUEST_TIME' => 1509942142,
+]
+[06-Nov-2017 12:23:15 PRC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method frontend\models\User::addRule() does not exist' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php:195
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(195): ReflectionMethod->__construct('frontend\\models...', 'addRule')
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('frontend\\models...')
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(304): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(326): yii\web\ErrorHandler->renderCallStackItem('C:\\soft\\phpStud...', 10, 'frontend\\models...', 'addRule', Array, 3)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\exception.php(381): yii\web\ErrorHandler->renderCallStack(Object(yii\base\UnknownMethodException))
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(116): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#14 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\models\User::addRule()' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\views\form-user\index.php(10): yii\base\Component->__call('addRule', Array)
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\views\form-user\index.php(10): frontend\models\User->addRule()
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\soft\\phpStud...', Array, Object(frontend\controllers\FormUserController))
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\FormUserController))
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\FormUserController.php(21): yii\base\Controller->render('index', Array)
+#7 [internal function]: frontend\controllers\FormUserController->actionIndex()
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('form-user', Array)
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\soft\\软件\\TortoiseSVN\\bin;C;\\soft\\phpStudy\\php\\php-5.6.27-nts;C:\\Users\\Mr.Z\\AppData\\Local\\Microsoft\\WindowsApps',
+    'SYSTEMROOT' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'PHP_FCGI_MAX_REQUESTS' => '1000',
+    'PHPRC' => 'C:/soft/phpStudy/php/php-5.6.27-nts/',
+    '_FCGI_SHUTDOWN_EVENT_' => '2292',
+    'SCRIPT_NAME' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_URI' => '/App/1510phpF_Nine/week/frontend/web/index.php?r=form-user',
+    'QUERY_STRING' => 'r=form-user',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '55343',
+    'SCRIPT_FILENAME' => 'C:/soft/phpStudy/WWW/App/1510phpF_Nine/week/frontend/web/index.php',
+    'SERVER_ADMIN' => 'admin@phpStudy.net',
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+    'SERVER_SIGNATURE' => '',
+    'SystemRoot' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-frontend=capt6b2r0cm6rvet8u5cmnmhr2; _csrf-frontend=06f85c4fab0ed7a212e9b4dddb76932c8df69b690821d35c4091eea7292e769ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%04p%ADU%7Ds+%86%C5%F3%F0W%09%01%B3%10O%C8%3Cs%A8%7C%3C%3EEuT%10p%D3%0E%0B%22%3B%7D; advanced-backend=mkk9msrarmm9mbvgnscg3fne62; _csrf-backend=cc77993a2c1dca940aaf43307f1682b002a11ebc5b572c6dc418bf381b79e6aca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%CA%0F%BF%2F%F3%91J%84%94%8E%D7%A7%AE%F7%1C_%28%3C%3C%C2e%E3%D6%00%BE%1E%13%7C%85%EE%C24%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1509942194.865737,
+    'REQUEST_TIME' => 1509942194,
+]
+[06-Nov-2017 12:25:35 PRC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method frontend\models\User::rule() does not exist' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php:195
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(195): ReflectionMethod->__construct('frontend\\models...', 'rule')
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('frontend\\models...')
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(304): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(326): yii\web\ErrorHandler->renderCallStackItem('C:\\soft\\phpStud...', 32, 'frontend\\models...', 'rule', Array, 3)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\exception.php(381): yii\web\ErrorHandler->renderCallStack(Object(yii\base\UnknownMethodException))
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(116): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#14 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\models\User::rule()' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\models\User.php(32): yii\base\Component->__call('rule', Array)
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\models\User.php(32): frontend\models\User->rule()
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Model.php(443): frontend\models\User->rules()
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Model.php(411): yii\base\Model->createValidators()
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Model.php(426): yii\base\Model->getValidators()
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Model.php(472): yii\base\Model->getActiveValidators('username')
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\widgets\ActiveField.php(859): yii\base\Model->isAttributeRequired('username')
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\widgets\ActiveField.php(393): yii\widgets\ActiveField->addAriaAttributes(Array)
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\views\form-user\index.php(11): yii\widgets\ActiveField->textInput()
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\soft\\phpStud...', Array, Object(frontend\controllers\FormUserController))
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\FormUserController))
+#13 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\FormUserController.php(21): yii\base\Controller->render('index', Array)
+#14 [internal function]: frontend\controllers\FormUserController->actionIndex()
+#15 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#18 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('form-user', Array)
+#19 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\web\index.php(17): yii\base\Application->run()
+#21 {main}
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\soft\\软件\\TortoiseSVN\\bin;C;\\soft\\phpStudy\\php\\php-5.6.27-nts;C:\\Users\\Mr.Z\\AppData\\Local\\Microsoft\\WindowsApps',
+    'SYSTEMROOT' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'PHP_FCGI_MAX_REQUESTS' => '1000',
+    'PHPRC' => 'C:/soft/phpStudy/php/php-5.6.27-nts/',
+    '_FCGI_SHUTDOWN_EVENT_' => '2264',
+    'SCRIPT_NAME' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_URI' => '/App/1510phpF_Nine/week/frontend/web/index.php?r=form-user',
+    'QUERY_STRING' => 'r=form-user',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '55447',
+    'SCRIPT_FILENAME' => 'C:/soft/phpStudy/WWW/App/1510phpF_Nine/week/frontend/web/index.php',
+    'SERVER_ADMIN' => 'admin@phpStudy.net',
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+    'SERVER_SIGNATURE' => '',
+    'SystemRoot' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-frontend=capt6b2r0cm6rvet8u5cmnmhr2; _csrf-frontend=06f85c4fab0ed7a212e9b4dddb76932c8df69b690821d35c4091eea7292e769ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%04p%ADU%7Ds+%86%C5%F3%F0W%09%01%B3%10O%C8%3Cs%A8%7C%3C%3EEuT%10p%D3%0E%0B%22%3B%7D; advanced-backend=mkk9msrarmm9mbvgnscg3fne62; _csrf-backend=cc77993a2c1dca940aaf43307f1682b002a11ebc5b572c6dc418bf381b79e6aca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%CA%0F%BF%2F%F3%91J%84%94%8E%D7%A7%AE%F7%1C_%28%3C%3C%C2e%E3%D6%00%BE%1E%13%7C%85%EE%C24%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1509942334.490308,
+    'REQUEST_TIME' => 1509942334,
+]
+[06-Nov-2017 12:26:09 PRC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method frontend\models\User::rule() does not exist' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php:195
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(195): ReflectionMethod->__construct('frontend\\models...', 'rule')
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('frontend\\models...')
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(304): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(326): yii\web\ErrorHandler->renderCallStackItem('C:\\soft\\phpStud...', 32, 'frontend\\models...', 'rule', Array, 3)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\exception.php(381): yii\web\ErrorHandler->renderCallStack(Object(yii\base\UnknownMethodException))
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(116): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#14 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\models\User::rule()' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\models\User.php(32): yii\base\Component->__call('rule', Array)
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\models\User.php(32): frontend\models\User->rule()
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Model.php(443): frontend\models\User->rules()
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Model.php(411): yii\base\Model->createValidators()
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Model.php(426): yii\base\Model->getValidators()
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Model.php(472): yii\base\Model->getActiveValidators('username')
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\widgets\ActiveField.php(859): yii\base\Model->isAttributeRequired('username')
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\widgets\ActiveField.php(393): yii\widgets\ActiveField->addAriaAttributes(Array)
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\views\form-user\index.php(11): yii\widgets\ActiveField->textInput()
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\soft\\phpStud...', Array, Object(frontend\controllers\FormUserController))
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\FormUserController))
+#13 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\FormUserController.php(21): yii\base\Controller->render('index', Array)
+#14 [internal function]: frontend\controllers\FormUserController->actionIndex()
+#15 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#18 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('form-user', Array)
+#19 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\web\index.php(17): yii\base\Application->run()
+#21 {main}
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\soft\\软件\\TortoiseSVN\\bin;C;\\soft\\phpStudy\\php\\php-5.6.27-nts;C:\\Users\\Mr.Z\\AppData\\Local\\Microsoft\\WindowsApps',
+    'SYSTEMROOT' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'PHP_FCGI_MAX_REQUESTS' => '1000',
+    'PHPRC' => 'C:/soft/phpStudy/php/php-5.6.27-nts/',
+    '_FCGI_SHUTDOWN_EVENT_' => '2264',
+    'SCRIPT_NAME' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_URI' => '/App/1510phpF_Nine/week/frontend/web/index.php?r=form-user',
+    'QUERY_STRING' => 'r=form-user',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '55464',
+    'SCRIPT_FILENAME' => 'C:/soft/phpStudy/WWW/App/1510phpF_Nine/week/frontend/web/index.php',
+    'SERVER_ADMIN' => 'admin@phpStudy.net',
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+    'SERVER_SIGNATURE' => '',
+    'SystemRoot' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-frontend=capt6b2r0cm6rvet8u5cmnmhr2; _csrf-frontend=06f85c4fab0ed7a212e9b4dddb76932c8df69b690821d35c4091eea7292e769ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%04p%ADU%7Ds+%86%C5%F3%F0W%09%01%B3%10O%C8%3Cs%A8%7C%3C%3EEuT%10p%D3%0E%0B%22%3B%7D; advanced-backend=mkk9msrarmm9mbvgnscg3fne62; _csrf-backend=cc77993a2c1dca940aaf43307f1682b002a11ebc5b572c6dc418bf381b79e6aca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%CA%0F%BF%2F%F3%91J%84%94%8E%D7%A7%AE%F7%1C_%28%3C%3C%C2e%E3%D6%00%BE%1E%13%7C%85%EE%C24%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1509942368.0090089,
+    'REQUEST_TIME' => 1509942368,
+]
+[06-Nov-2017 14:34:43 PRC] PHP Fatal error:  Call to undefined method frontend\models\User::find() in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\validators\UniqueValidator.php on line 211
+[06-Nov-2017 14:35:33 PRC] PHP Fatal error:  Call to undefined method frontend\models\User::find() in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\validators\UniqueValidator.php on line 211
+[06-Nov-2017 14:36:27 PRC] PHP Fatal error:  Call to undefined method frontend\models\User::find() in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\validators\UniqueValidator.php on line 211
+[06-Nov-2017 14:44:46 PRC] PHP Fatal error:  Cannot make static method yii\db\ActiveRecord::tablename() non static in class frontend\models\User in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\models\User.php on line 11
+[06-Nov-2017 14:52:28 PRC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method frontend\models\UserForm::save() does not exist' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php:195
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(195): ReflectionMethod->__construct('frontend\\models...', 'save')
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('frontend\\models...')
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(304): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(326): yii\web\ErrorHandler->renderCallStackItem('C:\\soft\\phpStud...', 19, 'frontend\\models...', 'save', Array, 3)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\exception.php(381): yii\web\ErrorHandler->renderCallStack(Object(yii\base\UnknownMethodException))
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(116): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#14 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\models\UserForm::save()' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\FormUserController.php(19): yii\base\Component->__call('save', Array)
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\FormUserController.php(19): frontend\models\UserForm->save()
+#2 [internal function]: frontend\controllers\FormUserController->actionIndex()
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('form-user', Array)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\soft\\软件\\TortoiseSVN\\bin;C;\\soft\\phpStudy\\php\\php-5.6.27-nts;C:\\Users\\Mr.Z\\AppData\\Local\\Microsoft\\WindowsApps',
+    'SYSTEMROOT' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'PHP_FCGI_MAX_REQUESTS' => '1000',
+    'PHPRC' => 'C:/soft/phpStudy/php/php-5.6.27-nts/',
+    '_FCGI_SHUTDOWN_EVENT_' => '2340',
+    'SCRIPT_NAME' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_URI' => '/App/1510phpF_Nine/week/frontend/web/index.php?r=form-user',
+    'QUERY_STRING' => 'r=form-user',
+    'REQUEST_METHOD' => 'POST',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '59497',
+    'SCRIPT_FILENAME' => 'C:/soft/phpStudy/WWW/App/1510phpF_Nine/week/frontend/web/index.php',
+    'SERVER_ADMIN' => 'admin@phpStudy.net',
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+    'SERVER_SIGNATURE' => '',
+    'SystemRoot' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-frontend=capt6b2r0cm6rvet8u5cmnmhr2; _csrf-frontend=06f85c4fab0ed7a212e9b4dddb76932c8df69b690821d35c4091eea7292e769ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%04p%ADU%7Ds+%86%C5%F3%F0W%09%01%B3%10O%C8%3Cs%A8%7C%3C%3EEuT%10p%D3%0E%0B%22%3B%7D; advanced-backend=mkk9msrarmm9mbvgnscg3fne62; _csrf-backend=cc77993a2c1dca940aaf43307f1682b002a11ebc5b572c6dc418bf381b79e6aca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%CA%0F%BF%2F%F3%91J%84%94%8E%D7%A7%AE%F7%1C_%28%3C%3C%C2e%E3%D6%00%BE%1E%13%7C%85%EE%C24%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_REFERER' => 'http://127.0.0.1/App/1510phpF_Nine/week/frontend/web/index.php?r=form-user',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_ORIGIN' => 'http://127.0.0.1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'CONTENT_LENGTH' => '370',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1509951146.8932149,
+    'REQUEST_TIME' => 1509951146,
+]
+[06-Nov-2017 14:54:34 PRC] PHP Fatal error:  Call to undefined function frontend\models\User() in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\models\UserForm.php on line 132
+[13-Nov-2017 13:40:44 PRC] PHP Fatal error:  Class 'frontend\controllers\Table' not found in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\TableController.php on line 9
+[13-Nov-2017 13:41:19 PRC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method frontend\models\Table::findBySql() does not exist' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php:195
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(195): ReflectionMethod->__construct('frontend\\models...', 'findBySql')
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('frontend\\models...')
+#2 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(304): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(326): yii\web\ErrorHandler->renderCallStackItem('C:\\soft\\phpStud...', 11, 'frontend\\models...', 'findBySql', Array, 3)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\views\errorHandler\exception.php(381): yii\web\ErrorHandler->renderCallStack(Object(yii\base\UnknownMethodException))
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(330): require('C:\\soft\\phpStud...')
+#9 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\soft\\phpStud...', Array)
+#10 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#11 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\ErrorHandler.php(116): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#12 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#14 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\models\Table::findBySql()' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\TableController.php(11): yii\base\Component->__call('findBySql', Array)
+#1 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\TableController.php(11): frontend\models\Table->findBySql('show table stat...')
+#2 [internal function]: frontend\controllers\TableController->actionIndex()
+#3 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#6 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('table', Array)
+#7 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\soft\\软件\\TortoiseSVN\\bin;C;\\soft\\phpStudy\\php\\php-5.6.27-nts;C:\\Users\\Mr.Z\\AppData\\Local\\Microsoft\\WindowsApps',
+    'SYSTEMROOT' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'PHP_FCGI_MAX_REQUESTS' => '1000',
+    'PHPRC' => 'C:/soft/phpStudy/php/php-5.6.27-nts/',
+    '_FCGI_SHUTDOWN_EVENT_' => '2136',
+    'SCRIPT_NAME' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_URI' => '/App/1510phpF_Nine/week/frontend/web/index.php?r=table',
+    'QUERY_STRING' => 'r=table',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '53465',
+    'SCRIPT_FILENAME' => 'C:/soft/phpStudy/WWW/App/1510phpF_Nine/week/frontend/web/index.php',
+    'SERVER_ADMIN' => 'admin@phpStudy.net',
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => 'C:/soft/phpStudy/WWW',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+    'SERVER_SIGNATURE' => '',
+    'SystemRoot' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1510027449; _ga=GA1.4.99932115.1510027449; advanced-frontend=c6evmvundlo7llf0m5ptqomjm3; _csrf-frontend=cbcf889040ce81e20150ba48d385468b7968429694a9fadca86f0e0d06b7b0f7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F8%09%3D%DC%D6%F3%25%14d%AC%1A%A8%A9%87%00%F2%40vh%9F%A7%B1LH%D9%A9%C2%D8I%C1A%DD%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/App/1510phpF_Nine/week/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1510551679.088244,
+    'REQUEST_TIME' => 1510551679,
+]
+[13-Nov-2017 14:36:37 PRC] PHP Fatal error:  Class 'frontend\models\TableForm' not found in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\TableController.php on line 15
+[20-Nov-2017 12:07:31 PRC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\views\table\edit.php on line 3
+[20-Nov-2017 14:02:18 PRC] PHP Parse error:  syntax error, unexpected '}' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\TableController.php on line 77
+[20-Nov-2017 14:58:06 PRC] PHP Parse error:  syntax error, unexpected ')' in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\controllers\TableController.php on line 109
+[23-Nov-2017 10:03:18 PRC] PHP Fatal error:  Class 'Url' not found in C:\soft\phpStudy\WWW\App\1510phpF_Nine\week\frontend\views\table\edit.php on line 117

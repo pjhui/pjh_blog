@@ -1,0 +1,63 @@
+/*控制操作的按钮*/
+.span_show{
+    cursor:pointer;margin-left: 35px;color:#1874CD;
+}
+/*最外层的div*/
+.mask{
+    z-index: 1;
+    position: absolute;
+    opacity:0.5;
+    left:0px;top:0px;
+    width: 100%;
+    height:100%;
+    background-color: #D1D1D1;
+    display: blobk;
+}
+/*显示内容的div*/
+.content{
+    display: blobk;
+    z-index: 1;
+    border:1px solid #000;
+    position: absolute;
+    left:27%;top:10%;
+    background-color: #FFFFFF;
+    width: 840px;
+    height:500px;
+    margin-top: 50px;
+}
+/*文本框*/
+.key_text{
+    height: 50px;
+    width:500px;
+    border-radius: 15px;
+    border:1px solid #EAEAEA;
+    font-size:15px;
+    padding-left: 15px;
+}
+/*显示流秘钥的来源*/
+.teng{
+    margin: 30px;
+}
+/*url的div*/
+.url_box{
+    margin-left: 110px;
+    margin-top: 20px;
+}
+.key_box{
+    margin-left: 85px;
+    margin-top: 20px;
+}
+/*复制按钮*/
+.copy-text{
+    cursor:pointer;
+    color:#1874CD;
+    margin-left: 35px;
+}
+.close{
+    width: 30px;
+    height:30px;
+    border:1px solid #000;
+    margin:20px;
+    text-align: center;
+    line-height:25px;
+}
